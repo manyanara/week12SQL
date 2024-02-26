@@ -1,31 +1,34 @@
 INSERT INTO department (id, name)
-VALUES  (01, "Finance"),
-        (02, "Marketing"), 
-        (03, "Human Resource"), 
-        (04, "Information Technology");
+VALUES  
+    (1, 'Finance'),
+    (2, 'Marketing'), 
+    (3, 'Human Resource'), 
+    (4, 'Information Technology');
 
-INSERT INTO role (id, job title, salary, department_id)
-VALUES  (01, "Financial Analyst", 130000, 01), 
-        (02, "Payroll Specialist", 85000, 03), 
-        (03, "Social Media Manager", 65000, 02), 
-        (04, "Desktop Support", 75000, 04), 
-        (05, "General Manager", 110000, 03), 
-        (06, "Helpdesk Support", 95000, 04), 
-        (07, "Accountant", 85000, 01);
+INSERT INTO role (id, job_title, salary, department_id)
+VALUES  
+    (1, 'Financial Analyst', 130000, 1), 
+    (2, 'Payroll Specialist', 85000, 3), 
+    (3, 'Social Media Manager', 65000, 2), 
+    (4, 'Desktop Support', 75000, 4), 
+    (5, 'General Manager', 110000, 3), 
+    (6, 'Helpdesk Support', 95000, 4), 
+    (7, 'Accountant', 85000, 1);
 
 INSERT INTO employee (id, first_name, last_name, role_id, manager_id)
-VALUES  (01, "Lara", "Parker", 03, 463), 
-        (02, "Shelly", "Martins", 05, 426), 
-        (03, "Renee", "Wold", 01, 321), 
-        (04, "Janessa", "Williams", 06, 465 ), 
-        (05, "Keri", "Fisher", 07, 261), 
-        (06, "Martina", "Lopez", 04, 934), 
-        (07, "Lucy", "Wei", 06, 312), 
-        (08, "Jameeka", "Best", 02, 634), 
-        (09, "Kandi", "Garcon", 02, 452), 
-        (10, "Ella", "Ramses", 01, 673), 
-        (11, "Theresa", "Ahn", 06, 621), 
-        (12, "Brittney", "Faye", 04, 024), 
-        (13, "Anna", "Ansel", 07, 981), 
-        (14, "Pheobe", "Mayce", 07, 092), 
-        (15, "Lisa", "Neucar", 06, 562);
+VALUES  
+    (1, 'Lara', 'Parker', 3, 463), 
+    (2, 'Shelly', 'Martins', 5, 426), 
+    (3, 'Renee', 'Wold', 1, 321), 
+    (4, 'Janessa', 'Williams', 6, 465 ), 
+    (5, 'Keri', 'Fisher', 7, 261), 
+    (6, 'Martina', 'Lopez', 4, 934), 
+    (7, 'Lucy', 'Wei', 6, 312), 
+    (8, 'Jameeka', 'Best', 2, 634), 
+    (9, 'Kandi', 'Garcon', 2, 452), 
+    (10, 'Ella', 'Ramses', 1, 673), 
+    (11, 'Theresa', 'Ahn', 6, 621), 
+    (12, 'Brittney', 'Faye', 4, 24), 
+    (13, 'Anna', 'Ansel', 7, 981), 
+    (14, 'Pheobe', 'Mayce', 7, 92), 
+    (15, 'Lisa', 'Neucar', 6, 562);
